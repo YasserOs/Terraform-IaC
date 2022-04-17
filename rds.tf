@@ -21,7 +21,7 @@ resource "aws_security_group" "security-group-database" {
     from_port        = 0
     to_port          = 0
     protocol         = "-1"
-    cidr_blocks      = ["0.0.0.0/0"]
+    cidr_blocks      = [var.prv_sub_1_cidr,var.prv_sub_2_cidr]
     
   }
 
